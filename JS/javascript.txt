@@ -1,0 +1,5 @@
+Function ---->> a block of code that can be reused again and again.
+   ** Rules for function names ---> no reserved keywords, cannot start with number, no special characters.
+   ** Variables created in the block have no global scope.
+   ** Return does gets a value out of a function.
+   ** Parameter does puts a value into a function.
