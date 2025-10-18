@@ -1,5 +1,34 @@
-Function ---->> a block of code that can be reused again and again.
+Functions ---->> a block of code that can be reused again and again.
+
    ** Rules for function names ---> no reserved keywords, cannot start with number, no special characters.
    ** Variables created in the block have no global scope.
    ** Return does gets a value out of a function.
    ** Parameter does puts a value into a function.
+
+Objects --->> An object groups multiple values together.
+
+   ** It can be created using {} and inside the braces it contains name:'abhinay'
+      where in name is the property and abhinay is the value assigned.
+   ** A dot notation is something which is used to access the value.
+   ** If the dot notation is notExist then it displays undefined.
+   ** We can add new property or even delete an existing property from the object.
+      eg:- product.name = 'cotton socks';
+           delete product.name;
+   ** Why objects? Instead of declaring multiple variables we can group multiple values
+      together in the form of objects.
+   ** Bracket Notation = Object values can be retrieved by using the square brackets.
+      eg:- products['name']; It does let us use properties that dont work with dot notation.
+   ** console.log() -->> here, console is the object and log is the function so does js deals with objects
+      and methods.
+   ** Built in objects ---->> two types
+      a. json(javascript object notation)
+      b. local storage
+   ** There is a lot of difference between javascript object and json object.
+      js object does supports function and values are in single quotes, whereas
+      json object does supports double quotes and wont work with functions.
+   ** "Convert js object into Json" JSON.stringify(js object) is used to convert the js object into json object.
+   ** "Convert json into js object" JSON.parse(json) is used to convert the json object into js object.
+   ** localStorage is used to store the actions performed even after the page is refreshed.
+   ** localStorage supports only strings.
+
+
