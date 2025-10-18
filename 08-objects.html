@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Objects</title>
+    </head>
+    <body>  
+        <script>
+            /*
+            const employee={
+                id: 4638265,
+                name: 'Abhinay',
+                role: 'SDE',
+                firm: 'Google'
+            };
+
+            console.log(employee.name);
+            console.log(employee.id);
+
+            employee.experience='1 year';
+            console.log(employee);
+
+            delete employee.experience;
+            console.log(employee);
+            */
+
+            const products={
+                name:'shirts',
+                'delivery-time':'1 day',
+                size:{
+                    xs:'available',
+                    s:'available',
+                    m:'unavailable',
+                    l:'available',
+                    xl:'unavailable'
+                },
+                function: function fun(){
+                    console.log("Inside Function Block!");
+                }
+            };
+
+            console.log(products.name);
+            console.log(products['delivery-time']);
+            console.log(products.size.xl);
+            console.log(products.size['l']);
+            products.function();
+            console.log(typeof console);
+            console.log(typeof console.log);
+
+            // ----------- Json Object ------------------
+
+            const jsonToJs = JSON.stringify(products);
+            console.log(jsonToJs);
+
+            console.log(JSON.parse(jsonToJs));
+
+            
+        </script>
+    </body>
+</html>
