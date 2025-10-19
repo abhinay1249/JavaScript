@@ -23,6 +23,7 @@
             console.log(employee);
             */
 
+            /*
             const products={
                 name:'shirts',
                 'delivery-time':'1 day',
@@ -52,8 +53,59 @@
             console.log(jsonToJs);
 
             console.log(JSON.parse(jsonToJs));
+            */
 
+            console.log('hello'.length);
+            console.log('helloworld'.toUpperCase());
+            console.log('HEYWORLD'.toLowerCase());
+
+            const object1 = {
+                message:'Hi Abhinay'
+            };
+
+            const object2=object1;
+
+            console.log(object2 === object1);
+
+            const object3 = {
+                message:'Hi Abhinay'
+            };
             
+            console.log(object3===object2);
+            console.log(object3.message===object2.message);
+
+        // ---- Destructuring property -------
+
+            const object4 = {
+                message : 'Abhinay',
+                price:999
+            };
+            //const message = object4.message;
+
+            const{message,price}=object4;
+            console.log(message);
+            console.log(price);
+
+        // --------- Shorthand property -------------
+
+            const object5={
+                //message:message
+                message,
+                price,
+                
+        // ------ Shorthand method -----------
+
+                // function:function function1(){
+                    // console.log("Hi");
+                // }
+                function1(){
+                    console.log("Shorthand method");
+                }
+            };
+            console.log(object5);
+            object5.function1();
+
+
         </script>
     </body>
 </html>
