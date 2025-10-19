@@ -1,3 +1,5 @@
+Falsy Values --->> false, 0, '', NaN, undefined, null
+
 Functions ---->> a block of code that can be reused again and again.
 
    ** Rules for function names ---> no reserved keywords, cannot start with number, no special characters.
@@ -26,9 +28,30 @@ Objects --->> An object groups multiple values together.
    ** There is a lot of difference between javascript object and json object.
       js object does supports function and values are in single quotes, whereas
       json object does supports double quotes and wont work with functions.
-   ** "Convert js object into Json" JSON.stringify(js object) is used to convert the js object into json object.
-   ** "Convert json into js object" JSON.parse(json) is used to convert the json object into js object.
+   ** "Convert js object into Json" --->> JSON.stringify(js object) is used to convert the js object into json object.
+   ** "Convert json into js object" --->> JSON.parse(json) is used to convert the json object into js object.
    ** localStorage is used to store the actions performed even after the page is refreshed.
    ** localStorage supports only strings.
+   ** When nothing exists in local storage, it gives us ''null''.
+   ** Null means intentionally want something to be empty.
+   ** Auto Boxing --->> It refers to the process of string to wrap in an object, it does not work with 
+      null and undefined.
+   **Objects for reference --->> In this place, if a object is created and the property and value is assigned
+      such as const object1={
+         name:'abhinay'
+      }; -->> here the name abhinay is stored in computer memory whereas the object will store it reference to 
+      locate it. Incase if an another object is pointed to the object1 then it wont create again in computer memory
+      rather than it points to the object references from previous object.
+   ** When we compare two objects it does compare the reference of it rather than the values present in it.
+   ** Destructuring ---->> It is process of making a shortcut to the object property allocation to the variable
+      such as:
+               const message = object3.message; -->> the variable is assigned to the object property value.
+               [Shortcut] const {message} = object4; -->> it means that object4 property message value is being
+               assinged to the variable message through the shortcut message.
+               If it contains multiple properties then it is 
+                  const {message, price} = object4;
+   ** Shorthand method --->> Kind of method where in the js object we can direclty create the method rather than 
+      using property for it.
+
 
 
