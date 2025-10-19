@@ -53,5 +53,7 @@ Objects --->> An object groups multiple values together.
    ** Shorthand method --->> Kind of method where in the js object we can direclty create the method rather than 
       using property for it.
 
+Document Object Model ---------->> 
+
 
 
