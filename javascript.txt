@@ -60,7 +60,8 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
          eg:- document.title = 'Changed Title';
               document.body.innerHTML = 'Changed body';
    ** document.title is used to change the title of the html page.
-   
+   **
+
 
 
 
