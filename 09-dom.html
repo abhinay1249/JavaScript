@@ -4,8 +4,20 @@
         <title>Document Object Model</title>
     </head>
     <body>  
+        <button>Submit</button>
         <script>
+           console.log(document.title);
+           console.log(document.body);
+           console.log(document.body.innerHTML);
+
+           document.body.innerHTML='<button>Ok</button>';
+
+
            
+           /*
+           document.title = 'Document Object Model[DOM]';
+           document.body.innerHTML='Changed by innerHTML';
+           */
         </script>
     </body>
 </html>
