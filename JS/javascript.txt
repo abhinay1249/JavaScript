@@ -80,7 +80,11 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
    ** Type Coercion =   Whenever we get a value from dom like above it is a string, even though it is a 
       number but the type of it is a string.
       But In order to convert a string into number js has a built in function called as "Number()" similar to type casting.
-   
+   ** Onkeydown is an attribute which is used to display the text in console when we does hit the keys on the keyboard.
+   ** clicks, keydowns are ====>> events
+   ** onclick, onkeydown ======>> event listeners
+   ** event is recognised as an object in js.
+   ** Every event listener gets an event object.
 
 
 
