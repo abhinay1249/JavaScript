@@ -64,7 +64,15 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
    ** document.title is used to change the title of the html page.
    ** document.body is used for the changes in the body of the webpage or even to print the info in body.
    ** document.body.innerHTML is used to control the entire html inside the body.
-   ** document.queryselector()
+   ** document.querySelector() is used to get any element from the page and put it inside javascript.
+   ** You had choosen a button to retrieve using querySelector what if there are multiple buttons then how to retrieve it,
+      here it goes by using the class attribute in the button
+      eg:- <button class="js-button">Second Button</button>
+            document.querySelector('.js-button');
+   ** From the above . represents the class selector even in css to style a specific thing we use . and make sure after
+      dot begin with js as it will easy to identify that it belongs to js.
+   ** Objects are values and can be saved in a variable.
+
 
 
 
