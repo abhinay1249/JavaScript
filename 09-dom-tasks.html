@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM - Tasks
+        </title>
+        <body>
+            <button>9a</button><p></p>
+            <button class="js-button2">9b</button><p></p>
+            <button onclick="choice('Heads')">Heads</button>
+            <button onclick="choice('Tails')">Tails</button><p></p>
+            <p class="js-result"></p>
+            <script>
+                console.log(document.querySelector('button').innerHTML);
+                console.log(document.querySelector('.js-button2').innerHTML='9b Done!');
+                
+                function choice(move){
+                    if(move==='Heads'){
+                        document.querySelector('.js-result').innerHTML=`'You had chosen: ${move}'`;
+                    }else{
+                        document.querySelector('.js-result').innerHTML=`'You had chosen: ${move}'`;
+                    }
+                }
+            </script>
+        </body>
+    </head>
+</html>
