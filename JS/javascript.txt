@@ -72,7 +72,15 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
    ** From the above . represents the class selector even in css to style a specific thing we use . and make sure after
       dot begin with js as it will easy to identify that it belongs to js.
    ** Objects are values and can be saved in a variable.
-
+   ** Untill now we had learnt regarding the class attribute and their retrieval method but now
+      what if we have an input and there is no innerHTML to be used then we shall retrieve the value through
+      ".value"
+      eg:- const amount = document.querySelector('.js-cost');
+            console.log(amount.value);
+   ** Type Coercion =   Whenever we get a value from dom like above it is a string, even though it is a 
+      number but the type of it is a string.
+      But In order to convert a string into number js has a built in function called as "Number()" similar to type casting.
+   
 
 
 

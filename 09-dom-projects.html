@@ -5,8 +5,16 @@
     </head>
     <body>  
         <p>Youtube Subscribe Button</p>
+
         <button onclick="subscribe();"
         class='js-subscribe-button'> Subscribe </button>
+        <br></br>
+        <p>Amazon Shipping Calculator</p>
+        <p>Orders under $40 will have a shipping cost of $10.</p>
+        <p>Orders above $40 will have a free shipping.</p>
+        <input placeholder="Cost Of Order" class="js-amount">
+        <button onclick="calculateCost();">Calculate</button>
+        <p class="js-total-cost"></p>
         <script>
             function subscribe(){
                 const buttonElement = document.querySelector('.js-subscribe-button');
@@ -16,6 +24,16 @@
                 }else{
                     buttonElement.innerHTML='Subscribe';
                 }   
+            }
+
+            function calculateCost(){
+                const amount = document.querySelector('.js-amount');
+                let input_cost = Number(amount.value);
+
+                if(input_cost < 40){
+                    input_cost=input_cost+10;
+                }
+                document.querySelector('.js-total-cost').innerHTML=`$${input_cost}`;
             }
         </script>
     </body>
