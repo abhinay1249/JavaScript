@@ -10,6 +10,9 @@
             <button onclick="choice('Heads')">Heads</button>
             <button onclick="choice('Tails')">Tails</button><p></p>
             <p class="js-result"></p>
+            <input placeholder="Name" class="js-input-name" onkeydown="keys();">
+            <button onclick="input();">Submit</button>
+            <p class="js-name"></p>
             <script>
                 console.log(document.querySelector('button').innerHTML);
                 console.log(document.querySelector('.js-button2').innerHTML='9b Done!');
@@ -20,6 +23,17 @@
                     }else{
                         document.querySelector('.js-result').innerHTML=`'You had chosen: ${move}'`;
                     }
+                }
+
+                function input(){
+                    let name = document.querySelector(".js-input-name");
+                    let input_name = name.value;
+                    document.querySelector(".js-name").innerHTML=`Your name is ${input_name}`;
+                    
+                }
+
+                function keys(){
+                    if(event.key==='Enter') input();
                 }
             </script>
         </body>
