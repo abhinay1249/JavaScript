@@ -5,15 +5,23 @@
     </head>
     <body>  
         <button>Submit</button>
+        <button class="js-button">Submit</button>
         <script>
+
+            console.log(document.querySelector('button').innerHTML);
+            console.log(document.querySelector('button').innerHTML='Changed');
+
+            console.log(document.querySelector('.js-button'));
+
+            
+
+            /*
            console.log(document.title);
            console.log(document.body);
            console.log(document.body.innerHTML);
 
            document.body.innerHTML='<button>Ok</button>';
-
-
-           
+           */
            /*
            document.title = 'Document Object Model[DOM]';
            document.body.innerHTML='Changed by innerHTML';
