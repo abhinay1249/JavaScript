@@ -85,6 +85,8 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
    ** onclick, onkeydown ======>> event listeners
    ** event is recognised as an object in js.
    ** Every event listener gets an event object.
-
+   ** Window object is a built in object used to represent the entire browser and by default js adds this object before 
+      other built in objects.
+      eg:- window.console.log("hi"); is similar to console.log("hi");
 
 
