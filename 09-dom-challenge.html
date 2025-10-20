@@ -15,6 +15,12 @@
         <input placeholder="Cost Of Order" class="js-amount" onkeydown="handleKeyButton();">
         <button onclick="calculateCost();">Calculate</button>
         <p class="js-total-cost"></p>
+
+        <input class="js-text" onkeyup="
+        const text = document.querySelector('.js-text');
+        let name = text.value.toUpperCase();
+        document.querySelector('.js-words').innerHTML=`${name}`;">
+        <p class="js-words"></p>
         
         <script>
             function subscribe(){
@@ -42,6 +48,7 @@
                     calculateCost();
                 }
             }
+            
         </script>
     </body>
 </html>

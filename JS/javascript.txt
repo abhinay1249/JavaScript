@@ -88,5 +88,8 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
    ** Window object is a built in object used to represent the entire browser and by default js adds this object before 
       other built in objects.
       eg:- window.console.log("hi"); is similar to console.log("hi");
-
+   ** Onkeydown is used to get the text in the input field to be retreived 
+      "After the key is pressed".
+   ** OnkeyUp is used to get the text in the input field to be retreived
+      "During the keys are pressed itself"
 
