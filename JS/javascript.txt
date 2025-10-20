@@ -52,6 +52,7 @@ Objects ---->> An object groups multiple values together.
                   const {message, price} = object4;
    ** Shorthand method --->> Kind of method where in the js object we can direclty create the method rather than 
       using property for it.
+   ** Built-In Objects provided by js are console,math,json,localStorage.
 
 Document Object Model ----->>  It is a built-in object in precise a document object.
 
@@ -59,9 +60,11 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
       changes can be made to the existing webpage such as
          eg:- document.title = 'Changed Title';
               document.body.innerHTML = 'Changed body';
+   ** Dom is used to combine both js and html together.
    ** document.title is used to change the title of the html page.
-   ** document.body is used for the changes in the body of the webpage.
-
+   ** document.body is used for the changes in the body of the webpage or even to print the info in body.
+   ** document.body.innerHTML is used to control the entire html inside the body.
+   ** document.queryselector()
 
 
 
