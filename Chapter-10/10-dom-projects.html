@@ -23,6 +23,24 @@
                 background-color:rgb(240, 240, 240);
                 color:black;
             }
+            .js-amount{
+                padding-top: 10px;
+                padding-bottom:10px;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 15px;
+            }
+            .css-calculate{
+                border:none;
+                background-color: green;
+                color: white;
+                padding-top: 12px;
+                padding-bottom:12px;
+                padding-left: 15px;
+                padding-right:15px;
+                font-size:15px;
+                cursor: pointer;
+            }
         </style>
     </head>
     <body>  
@@ -35,7 +53,7 @@
         <p>Orders under $40 will have a shipping cost of $10.</p>
         <p>Orders above $40 will have a free shipping.</p>
         <input placeholder="Cost Of Order" class="js-amount" onkeydown="handleKeyButton();">
-        <button onclick="calculateCost();">Calculate</button>
+        <button onclick="calculateCost();" class="css-calculate">Calculate</button>
         <p class="js-total-cost"></p>
         
         <script>
