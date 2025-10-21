@@ -1,0 +1,41 @@
+      body{
+        background-color: black;
+        color:white;
+        font-family: Arial;
+      }
+      .css-title{
+        font-weight: bold;
+        font-size:30px;
+      }
+      .css-result{
+        font-weight: bold;
+        font-size: 25px;
+        margin-top: 50px;
+      }
+      .moves-icon{
+        height: 50px;
+      }
+      .moves-button{
+        background-color: transparent;
+        border-width: 3px;
+        border-style:solid;
+        border-color: white;
+        /*border:3px solid white [It does replicates the above three lines.*/
+        width:120px;
+        height:120px;
+        border-radius: 60px;
+        margin-right:10px;
+        cursor: pointer;
+      }
+      .css-scores{
+        margin-top:50px;
+      }
+      .css-reset{
+        border:none;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 15px;
+        cursor: pointer;
+      }
