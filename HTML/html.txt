@@ -1,0 +1,2 @@
+** A tag which doesnt have a closing tag are known as void element.
+    eg:- <img>,<link>
