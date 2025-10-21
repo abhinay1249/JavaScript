@@ -1,0 +1,6 @@
+** The word in style tag before the css code is presented is known as CSS Selector.
+    eg:- <style>
+            button{}
+         </style>
+** CSS Selector describes which elements we need to style.
+** In CSS, space present inside a button is called padding.
