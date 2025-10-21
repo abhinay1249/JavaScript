@@ -11,3 +11,7 @@
     eg:- border-radius:10px; // the more you increase the pixels the large and good it looks.
 ** In order to make the cursor a pointer in the form of hand then use,
     eg:- cursor:pointer;
+** .classList is used to give us the control of the class attribute. It is also an object
+    which does contains methods.
+** Space on the inside of an element is padding and -->> space on the outside of element is called 
+    "Margin".git
