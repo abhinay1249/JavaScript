@@ -2,6 +2,28 @@
 <html>
     <head>  
         <title>DOM Projects</title>
+        <style>
+            body{
+                font-family: Arial;
+            }
+            .js-subscribe-button{
+                border:none;
+                background-color: black;
+                color:white;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:15px;
+                padding-right:15px;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 15px;
+                margin-bottom: 20px;
+            }
+            .is-subscribed{
+                background-color:rgb(240, 240, 240);
+                color:black;
+            }
+        </style>
     </head>
     <body>  
         <p>Youtube Subscribe Button</p>
@@ -22,8 +44,10 @@
 
                 if(buttonElement.innerText === 'Subscribe'){
                     buttonElement.innerHTML='Subscribed';
+                    buttonElement.classList.add('is-subscribed');
                 }else{
                     buttonElement.innerHTML='Subscribe';
+                    buttonElement.classList.remove('is-subscribed');
                 }   
             }
 
