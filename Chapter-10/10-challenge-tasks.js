@@ -3,14 +3,25 @@
             console.log(buttonElement);
 
             const gamingButton = document.querySelector('.js-toggle');
-            const gamingButton1 = document.querySelector('.js-toggle1');
-            const gamingButton2 = document.querySelector('.js-toggle2');
+            //const gamingButton1 = document.querySelector('.js-toggle1');
+            //const gamingButton2 = document.querySelector('.js-toggle2');
 
-            function onToggle(){
-                if(!gamingButton.classList.contains("is-toggled")){
-                    gamingButton.classList.add("is-toggled");
+            function onToggle(selector){
+                const button = document.querySelector(selector);
+
+                if(!button.classList.contains('is-toggled')){
+                    prevButton();
+                    button.classList.add('is-toggled');
                 }else{
-                    gamingButton.classList.remove("is-toggled");
+                    button.classList.remove('is-toggled');
+                }
+            }
+
+            function prevButton(){
+                const buttonElement = document.querySelector('.is-toggled');
+
+                if(buttonElement){
+                    buttonElement.classList.remove('is-toggled');
                 }
             }
             // function onToggle1(){
