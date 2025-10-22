@@ -5,51 +5,7 @@
             10-challenge-tasks
         </title>
     </head>
-    <style>
-        .css-amazon-button{
-            border:none;
-            background-color: rgb(255,216,20);
-            color:black;
-            padding:10px 24px;
-            border-radius: 40px;
-            cursor: pointer;
-            margin-bottom: 50px;
-        }
-        .css-uber-button1{
-            border:none;
-            background-color: black;
-            color: white;
-            font-weight: bold;
-            padding: 12px 20px;
-            border-radius: 5px;
-            margin-right:20px;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-        .css-uber-button2{
-            border:none;
-            background-color: rgb(230,230,230);
-            color:black;
-            font-weight: bold;
-            padding: 12px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .css-toggle{
-            border:none;
-            background-color: black;
-            color:white;
-            cursor: pointer;
-            padding: 10px 18px;
-            border-radius: 5px;
-            font-size: 15px;
-        }
-        .is-toggled{
-            background-color: rgb(230,230,230);
-            color:black;
-        }
-
-    </style>
+    <link rel="stylesheet" href="10-challenge-tasks.css">
     <body>
         <button class="css-amazon-button">Add to Cart</button>
         <br>
@@ -57,20 +13,11 @@
         <button class="css-uber-button2">Schedule for later</button>
         <button class="js-button">Test</button><p></p>
         <button onclick="onToggle();"class="js-toggle css-toggle">Gaming</button>
-        <script>
-            const button = document.querySelector('.js-button');
-            const buttonElement=button.classList.contains("js-button");
-            console.log(buttonElement);
+        <button onclick="onToggle1();"class="js-toggle1 css-toggle">Music</button>
+        <button onclick="onToggle2();"class="js-toggle2 css-toggle">Tech</button>
+       
+       <script src="10-challenge-tasks.js">
 
-            const gamingButton = document.querySelector('.js-toggle');
-
-            function onToggle(){
-                if(!gamingButton.classList.contains("is-toggled")){
-                    gamingButton.classList.add("is-toggled");
-                }else{
-                    gamingButton.classList.remove("is-toggled");
-                }
-            }
         </script>
     </body>
 </html>
