@@ -41,6 +41,9 @@
                 font-size:15px;
                 cursor: pointer;
             }
+            .js-cost-error{
+                color:red;
+            }
         </style>
     </head>
     <body>  
@@ -55,6 +58,7 @@
         <input placeholder="Cost Of Order" class="js-amount" onkeydown="handleKeyButton();">
         <button onclick="calculateCost();" class="css-calculate">Calculate</button>
         <p class="js-total-cost"></p>
+        <p class="js-cost-error"></p>
         
         <script>
             function subscribe(){
@@ -73,10 +77,15 @@
                 const amount = document.querySelector('.js-amount');
                 let input_cost = Number(amount.value);
 
+                if(0>input_cost){
+                    document.querySelector('.js-cost-error').innerHTML='Error: Cost cannot be less than $0';
+                    return;
+                }
                 if(input_cost < 40){
                     input_cost=input_cost+10;
+                    document.querySelector('.js-total-cost').innerHTML=`$${input_cost}`;
                 }
-                document.querySelector('.js-total-cost').innerHTML=`$${input_cost}`;
+                
             }
 
             function handleKeyButton(){
