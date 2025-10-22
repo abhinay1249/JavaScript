@@ -24,6 +24,7 @@
             border-radius: 5px;
             margin-right:20px;
             cursor: pointer;
+            margin-bottom: 20px;
         }
         .css-uber-button2{
             border:none;
@@ -34,6 +35,19 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .css-toggle{
+            border:none;
+            background-color: black;
+            color:white;
+            cursor: pointer;
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        .is-toggled{
+            background-color: rgb(230,230,230);
+            color:black;
+        }
 
     </style>
     <body>
@@ -41,11 +55,22 @@
         <br>
         <button class="css-uber-button1">Request now</button>
         <button class="css-uber-button2">Schedule for later</button>
-        <button class="js-button">Test</button>
+        <button class="js-button">Test</button><p></p>
+        <button onclick="onToggle();"class="js-toggle css-toggle">Gaming</button>
         <script>
             const button = document.querySelector('.js-button');
             const buttonElement=button.classList.contains("js-button");
             console.log(buttonElement);
+
+            const gamingButton = document.querySelector('.js-toggle');
+
+            function onToggle(){
+                if(!gamingButton.classList.contains("is-toggled")){
+                    gamingButton.classList.add("is-toggled");
+                }else{
+                    gamingButton.classList.remove("is-toggled");
+                }
+            }
         </script>
     </body>
 </html>
