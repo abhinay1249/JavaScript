@@ -34,11 +34,18 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
     </style>
     <body>
         <button class="css-amazon-button">Add to Cart</button>
         <br>
         <button class="css-uber-button1">Request now</button>
         <button class="css-uber-button2">Schedule for later</button>
+        <button class="js-button">Test</button>
+        <script>
+            const button = document.querySelector('.js-button');
+            const buttonElement=button.classList.contains("js-button");
+            console.log(buttonElement);
+        </script>
     </body>
 </html>
