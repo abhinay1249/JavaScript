@@ -5,41 +5,7 @@
         Calculator
       </title>
   </head>
-  <style>
-    body{
-      background-color: black;
-    }
-     .css-calculation{
-      color:white;
-      font-size: 45px;
-      font-family: Arial;
-      margin-top:15px;
-      margin-bottom: 5px;
-     }
-     .css-calculator-button{
-      height:60px;
-      width:60px;
-      border:none;
-      border-radius: 60px;
-      font-size: 26px;
-      cursor: pointer;
-      margin-right: 5px;
-     }
-     .css-clear-button{
-        font-size: 20px;
-     }
-
-     .gray-button{
-      background-color: rgb(51,51,51);
-      color:white;
-     }
-
-     .orange-button{
-      background-color: rgb(256,160,10);
-      color:white;
-     }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
   <body>
     <p class="js-calculation css-calculation"></p>
     <p>
@@ -97,22 +63,7 @@
         localStorage.setItem('calculation', calculation);" class="css-calculator-button gray-button css-clear-button">Clear</button>
     </p>
 
-    <script>
-      let calculation = localStorage.getItem('calculation') || '';
-
-      function updateCalculation(value) {
-        calculation += value;
-        showCalculation();
-        localStorage.setItem('calculation', calculation);
-      }
-
-      function saveCalculation() {
-        localStorage.setItem('calculation', calculation);
-      }
-
-      function showCalculation(){
-        document.querySelector('.js-calculation').innerHTML=calculation;
-      }
+    <script src="script.js">
     </script>
   </body>
 </html>
