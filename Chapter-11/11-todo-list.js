@@ -1,14 +1,27 @@
 const todolist = [];
 
+rendertodoList();
+
+function rendertodoList(){
+    let todoHtml ='';
+
+    for(let i = 0; i < todolist.length;i++){
+        const values = todolist[i];
+        const htmlValues = `<p>${values}</p>`;
+        todoHtml+=htmlValues;
+    }
+    document.querySelector(".js-div-tag").innerHTML=todoHtml;
+   // console.log(todoHtml);
+}
+
 function addTodoList(){
     const input_value = document.querySelector(".js-input-value");
     const text =input_value.value;
 
     todolist.push(text);
-    console.log(todolist);
+    //console.log(todolist);
     input_value.value='';
-
-    document.querySelector(".js-print-todo").innerHTML=`${todolist}`;
+    rendertodoList();
 }
 
 

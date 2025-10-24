@@ -1,2 +1,5 @@
 ** A tag which doesnt have a closing tag are known as void element.
     eg:- <img>,<link>
+** A <div> tag is like a container which is used to show contain other elements like buttons, paragraphs tags etc.
+** In html, we cannot have a paragraph inside a paragraph. So we use div tag for it to perform.
+** A paragraph tag does have extra space above and below, whereas a div tag does not provide it.
