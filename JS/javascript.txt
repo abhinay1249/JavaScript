@@ -93,3 +93,10 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
    ** OnkeyUp is used to get the text in the input field to be retreived
       "During the keys are pressed itself"
 
+Arrays ------>> It is an another type of value that represents a list of values.
+
+   ** It is a special type of object in javascript.
+   ** In order to check whether an array is an array or not we can do using, Array.isArray();
+   ** Arrays have properties and methods.
+   ** In an array, if you need to push an element to the end then use .push() method to perform.
+
