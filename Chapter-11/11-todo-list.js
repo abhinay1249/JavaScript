@@ -6,15 +6,24 @@ function rendertodoList(){
     let todoHtml ='';
 
     for(let i = 0; i < todolist.length;i++){
-        const values = todolist[i];
+        const todoObject = todolist[i];
+        // const name = todolist.name;
+        // const date = todolist.name;
+
+        // const {name} = todoObject;
+        // const {date} = todoObject;
+
+        const{name,date} = todoObject;
+
         const htmlValues = `
-            <p> 
-                ${values} 
+            <div> ${name}</div>
+            <div> ${date} </div>
+            <div> 
                 <button     
                     onclick="todolist.splice(${i},1)
                     rendertodoList();">Delete
                 </button>
-            </p>
+            </div>
         `;
         todoHtml+=htmlValues;
     }
@@ -26,7 +35,14 @@ function addTodoList(){
     const input_value = document.querySelector(".js-input-value");
     const text =input_value.value;
 
-    todolist.push(text);
+    const input_date = document.querySelector(".js-date");
+
+    const date = input_date.value;
+
+    todolist.push({
+        name:text,
+        date
+    });
     //console.log(todolist);
     input_value.value='';
     rendertodoList();

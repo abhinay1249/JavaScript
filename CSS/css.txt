@@ -17,3 +17,7 @@
     "Margin".git
 ** If we seperate the css file from html file then we use link tag which is void element that doesnt have
     ending tag and we need to put <link rel="stylesheet" href="address">
+** In order to create a grid and make a proper format to perform it then,
+    use display:grid, grid-template-columns:200px 150px 100px; then it is used to 
+    give proper spacing in between columns of bars in grid format between them.
+** We can even add an extra css class to the exisiting style through the comma[,].
