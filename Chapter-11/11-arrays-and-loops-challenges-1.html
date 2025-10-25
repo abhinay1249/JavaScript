@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Challenge Tasks - 1
+        </title>
+    </head>
+    <body>
+        <script>
+            // --------- 1st Task --------------
+
+                console.log("1st Task");
+
+            function strings(words){
+
+                for(let i = 0; i < words.length;i++){
+                    if(words[i] ==='search'){
+                        return i;
+                    }
+                }
+                return -1;
+            }  
+            console.log(strings(['hello','world','search','good']));
+            console.log(strings(['hello','world','good']));
+
+            // --------- 2nd Task --------------
+
+                console.log("2nd Task");
+
+                function words(string){
+                    for(let i = 0 ; i <string.length;i++){
+                        if(string[i]==='search'){
+                            console.log(i);
+                            break;
+                        }
+                    }
+                }
+
+                console.log(strings(['hello','world','search','good','search']));
+
+            // --------- 3rd Task --------------
+
+                console.log("3rd Task");
+
+                function findIndex(array,word){
+                    for(let i = 0 ; i < array.length;i++){
+                        if(array[i]===word){
+                            return i;
+                        }
+                    }
+                    return -1;
+                }
+                console.log(findIndex(['green','red','blue','red'],'red'));
+                console.log(findIndex(['green','red','blue','red'],'yellow'));
+
+            // --------- 4th Task --------------
+
+                console.log("4th Task");
+
+                function removeEgg(foods){
+                    const res =[];
+                    for(let i = 0; i<foods.length;i++){
+                        const val = foods[i];
+                        if(val==='egg'){
+                            continue;
+                        }else{
+                            res.push(foods[i]);
+                        }
+                    }
+                    return res;
+                }
+
+                console.log(removeEgg(['egg','apple','egg','egg','ham']));
+
+            // --------- 5th Task --------------
+
+                console.log("5th Task");
+
+                function removeEgg(foods){
+                    const res =[];
+                    let eggCount = 0;
+
+                    for(let i = 0; i<foods.length;i++){
+
+                        if(foods[i]==='egg' && eggCount<2){
+                            eggCount++;
+                            continue;
+                        }else{
+                            res.push(foods[i]);
+                        }
+                    }
+                    return res;
+                }
+
+                console.log(removeEgg(['egg','apple','egg','egg','ham']));
+
+            // --------- 6th Task --------------
+
+                console.log("6th Task");
+
+                function removeEggs(foods){
+                    const res = [];
+                    const reverse = foods.reverse();
+                    let eggCount = 0;
+
+                    for(let i=0;i<reverse.length;i++){
+
+                        if(reverse[i]==='egg' && eggCount<2){
+                            eggCount++;
+                            continue;
+                        }
+                            res.push(reverse[i]);
+                    }
+                    return res.reverse();
+                }
+
+                console.log(removeEggs(['egg','apple','egg','egg','ham']));
+
+            // --------- 7th Task --------------
+
+                console.log("7th Task");
+
+                    function removeEggs(foods){
+                    
+                    const foodCopy = foods.slice();
+                    const reverse = foodCopy.reverse();
+                    const res = [];
+                    let eggCount = 0;
+
+                    for(let i=0;i<reverse.length;i++){
+
+                        if(reverse[i]==='egg' && eggCount<2){
+                            eggCount++;
+                            continue;
+                        }
+                            res.push(reverse[i]);
+                    }
+                    return res.reverse();
+                }
+                const food = ['egg','apple','egg','egg','ham'];
+                console.log(removeEggs(food));
+                console.log(food);
+
+
+        </script>
+    </body>
+</html>
