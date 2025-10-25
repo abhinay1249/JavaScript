@@ -104,5 +104,15 @@ Arrays ------>> It is an another type of value that represents a list of values.
    ** In Js there is a concept called as destructuring, where in if the variable name and the object property has same name then this concept is
       used.    eg:- const name = todoList.name;
       using destructuring const {name} = todoList;
-   
+   ** Arrays are references, if we copy an array as another array it just copies it as the reference. Array1 is copied into array2 it 
+      doesnt copy array1 into array2 it just copies the references. Both the arrays point to a single array in memory.
+   ** In order to avoid this behaviour, there is a scope of copying arrays using ".slice()" method which represents as two arrays in
+      the memory.
+         eg:- array1=[1,2,3];
+               array2 = array1.slice();
+   ** In loops, there are two statements called as break, continue
+      break is used to break the flow of loop.
+      continue is used to skip one iteration and then continue the loop.
+   ** While using break and continue in while loop, the increment statement has to be used in continue usage block otherwise it may result 
+      to infinite loop.
 
