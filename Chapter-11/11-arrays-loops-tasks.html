@@ -132,6 +132,9 @@
                     console.log("10th Task");
 
                 function addArrays(array1,array2){
+                    if(array2.length === 0){
+                        return array1;
+                    }
                     for(let i = 0 ; i < array1.length;i++){
                         let value = array1[i];
                         array2[i] = array2[i]+value;
