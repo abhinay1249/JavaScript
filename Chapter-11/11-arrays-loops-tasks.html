@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Arrays-Loops-Challenges
+        </title>
+    </head>
+    <body>
+        <script>
+            // ----------- 1st Task --------------------
+            console.log("1st task");
+            const nums = [10,20,30];
+
+            console.log(nums);
+            nums[2] = 99;
+            console.log(nums);
+
+            // ----------- 2nd Task --------------------
+
+            console.log("2nd task");
+            const values = [1,20,22,24,5];
+            const text = ['hi','hello','good'];
+
+            function getLastValue(array){
+                for(let i = 0; i<array.length;i++){
+                    console.log(array[array.length-1]);
+                }
+            }
+
+            getLastValue(values);
+            getLastValue(text);
+
+            // ----------- 3rd Task --------------------
+            console.log("3rd task");
+
+            const swap_array = [1,20,24,5];
+            const swap_text = ['hi','hello','good'];
+
+            function arraySwap(array){
+
+                let temp = array[0];
+                array[0] = array[array.length-1];
+                array[array.length-1]= temp;
+
+                return array;
+                
+            }
+
+            console.log(arraySwap(swap_array));
+            console.log(arraySwap(swap_text));
+
+            // ----------- 4th Task --------------------
+            console.log("4th task");
+
+            for(let i = 0 ; i <= 10 ; i+=2){
+                console.log(i);
+            }
+            
+            // ----------- 5th Task --------------------
+            console.log("5th task");
+            for(let i = 5 ; i>=0;i--){
+                console.log(i);
+            }
+
+            // ----------- 6th Task --------------------
+                console.log("6th task");
+                let i = 0;
+
+                while(i<=10){
+                    console.log(i);
+                    i+=2;
+                }
+
+                let j = 5;
+
+                while(j>=0){
+                    console.log(j);
+                    j--;
+                }
+            // ----------- 7th Task --------------------
+
+                console.log("7th Task");
+
+                    const org_arr = [1,2,3];
+
+                    const incr_arr = [];
+
+                    for(let i = 0 ; i < org_arr.length;i++){
+                        let value = org_arr[i];
+                        incr_arr[i] = value+1;
+                        console.log(incr_arr[i]);
+                    }
+
+            // ----------- 8th Task --------------------
+
+                    console.log("8th Task");
+
+                    const array_1 = [1,2,3];
+                    const array_2 = [-2,-1,0,99];
+
+                    const incr_array=[];
+
+                    function addOne(array){
+                        for(let i = 0 ; i < array.length;i++){
+                            let value = array[i];
+                            incr_array[i] = value+1;
+                        }
+                        return array;
+                    }
+
+                    console.log(addOne(array_1));
+                    console.log(addOne(array_2));
+        </script>
+    </body>
+</html>
