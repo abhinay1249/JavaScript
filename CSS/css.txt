@@ -21,3 +21,8 @@
     use display:grid, grid-template-columns:200px 150px 100px; then it is used to 
     give proper spacing in between columns of bars in grid format between them.
 ** We can even add an extra css class to the exisiting style through the comma[,].
+** While using grid specification in order to obtain column or row gap then we need to use 
+    eg:- column-gap:10px; row-gap:10px;
+** In css, of the grid part incase if there is alignment issues between grid then use,
+    eg:- align-items:center/strecth;
+    

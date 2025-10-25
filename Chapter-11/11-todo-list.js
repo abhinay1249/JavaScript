@@ -18,12 +18,11 @@ function rendertodoList(){
         const htmlValues = `
             <div> ${name}</div>
             <div> ${date} </div>
-            <div> 
                 <button     
                     onclick="todolist.splice(${i},1)
-                    rendertodoList();">Delete
+                    rendertodoList();"
+                    class="css-delete">Delete
                 </button>
-            </div>
         `;
         todoHtml+=htmlValues;
     }
