@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Challenge Tasks
+        </title>
+    </head>
+    <body>
+        <script>
+
+            function minMax(nums){
+                // let minValue = nums[0];
+                // let maxValue = nums[0];
+                const result = {
+                    minValue:nums[0],
+                    maxValue:nums[0]
+                };
+
+                for(let i = 1 ; i < nums.length ; i++){
+
+                    if(result.minValue>nums[i]){
+                        result.minValue = nums[i];
+                    }
+                    if(result.maxValue<nums[i]){
+                        result.maxValue = nums[i];
+                    }
+                }
+                // return `{min:${minValue}, max:${maxValue}}`;
+                return result;
+            }
+
+            console.log(minMax([1,-3,5]));
+            console.log(minMax([-2,3,-5,7,10]));
+        </script>
+    </body>
+</html>
