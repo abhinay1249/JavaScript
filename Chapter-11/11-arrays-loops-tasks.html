@@ -110,6 +110,22 @@
 
                     console.log(addOne(array_1));
                     console.log(addOne(array_2));
+
+                // ----------- 9th Task --------------------
+
+                    console.log("9th Task");
+
+                    function addNum(array,num){
+                        for(let i = 0 ; i <array.length;i++){
+                            let value = array[i];
+                            array[i]=value+num;
+                        }
+                        return array;
+                    }
+
+                    console.log(addNum([1,2,3],2));
+                    console.log(addNum([1,2,3],3));
+                    console.log(addNum([-2,-1,0,99],2));
         </script>
     </body>
 </html>
