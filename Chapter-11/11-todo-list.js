@@ -7,7 +7,15 @@ function rendertodoList(){
 
     for(let i = 0; i < todolist.length;i++){
         const values = todolist[i];
-        const htmlValues = `<p>${values}</p>`;
+        const htmlValues = `
+            <p> 
+                ${values} 
+                <button     
+                    onclick="todolist.splice(${i},1)
+                    rendertodoList();">Delete
+                </button>
+            </p>
+        `;
         todoHtml+=htmlValues;
     }
     document.querySelector(".js-div-tag").innerHTML=todoHtml;

@@ -73,7 +73,7 @@ Document Object Model ----->>  It is a built-in object in precise a document obj
       dot begin with js as it will easy to identify that it belongs to js.
    ** Objects are values and can be saved in a variable.
    ** Untill now we had learnt regarding the class attribute and their retrieval method but now
-      what if we have an input and there is no innerHTML to be used then we shall retrieve the value through
+      what if we have an input to be entered and there is no innerHTML to be used then we shall retrieve the value through
       ".value"
       eg:- const amount = document.querySelector('.js-cost');
             console.log(amount.value);
@@ -101,5 +101,8 @@ Arrays ------>> It is an another type of value that represents a list of values.
    ** In an array, if you need to push an element to the end then use .push() method to perform.
    ** In an array, if you need to remove an element from it then use .splice(index,how many values from index) this method can perform
       remove operation.
+   ** In Js there is a concept called as destructuring, where in if the variable name and the object property has same name then this concept is
+      used.    eg:- const name = todoList.name;
+      using destructuring const {name} = todoList;
    
 
