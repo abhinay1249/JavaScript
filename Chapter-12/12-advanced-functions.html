@@ -111,6 +111,23 @@
                 console.log("clicks");
             })
 
+            // ----------------- filter() method -----------------
+                
+                console.log([1,-2,-2,24,-2,-21].filter((value,index)=>{
+                    // if(value>=0) return true;
+                    // else return false;
+
+                    return value>=0;
+                }));
+
+            // -------------- Map() method -----------------------
+
+                console.log([1,2,3].map((value,index)=>{
+                    return value*2;
+                }));
+
+                console.log([3,5,3].map(value => value*2));
+
 
 
             

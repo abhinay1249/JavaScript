@@ -196,5 +196,17 @@ Advance Functions ------->> Functions are like values.
                   console.log(event.key);
             })
    ** document.querySelectorAll() is used to give all the elements on the page.
+   ** .filter() is a kind of foreach method which is used to perform the filter operations through the boolean values,
+         if it is true then it creates another array and stores the values in it
+         if it is false then it does not create another array at all.
+         eg:- [1,-2,3].filter((value,index)=>{
+            if(value>=0) return true;
+            else return false;
+         });
+   ** .map() is used to perform the array values to be doubled or into transformative operation then it is used.
+         eg:- [1,2,3].map((value,index)=>{
+            return value*2;
+         });
+   ** Closure ----> if a function has access to the value, then it will always have access to that value.
 
 
