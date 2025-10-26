@@ -120,3 +120,33 @@ Arrays ------>> It is an another type of value that represents a list of values.
    ** While using break and continue in while loop, the increment statement has to be used in continue usage block otherwise it may result 
       to infinite loop.
 
+Advance Functions ------->> Functions are like values.
+
+   ** We can save a function inside a variable.
+      eg:- const variable = function greet(){
+         console.log('Morning');
+      }
+      variable();
+   ** From above we can even remove the function name and keep it like this,
+      eg:- const variable = function(){
+         console.log('Morning);
+      }
+      variable();  -->> here the function is called as anonymous function.
+   ** The two main advantages of using a normal function rather than above is that,
+      1. Easier to read the function.
+      2. Hoisting
+   ** Hoisting is the process of calling the function before itself and later the function is declared.
+      eg:- hello();
+            function hello(){
+               console.log('hello world!');
+            }
+   ** We can even put a function inside the object to such as,
+      eg:- const object1={
+               num:3,
+               fun:function(){
+                  console.log('animals eat food');
+               }
+            }
+            object1.fun();
+
+

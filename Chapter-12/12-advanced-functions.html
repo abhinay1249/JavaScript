@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <title>Advance Functions</title>
+    </head>
+    <body>  
+        <script>
+            hello();
+            function hello(){
+                console.log('hello world');
+            }
+            //hello();
+
+            // ---- Function inside a variable ------------
+
+            const variable = function(){ // ---->> Anonymous Function as there is no function name.
+                console.log('morning');
+            }
+            console.log(variable);
+            console.log(typeof variable);
+            variable();
+            
+            // ------- Function inside an object ---------
+
+            const object = {
+                num:3,
+                fun:function chocolate(){
+                    console.log("kids love chocolates");
+                }
+            }
+            object.fun();
+        </script>
+    </body>
+</html>
