@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Advance Functions Tasks
+        </title>
+    </head>
+    <body>
+        <button onclick="start_button();" class="js-start-button">Start</button>
+        <p></p>
+        <button onclick="addToCart();">Add to Cart</button>
+        <p class="js-add-button"></p>
+        <script>
+            // ------------- 1st Task -------------
+                console.log("------- 1st Task---------");
+                
+                const add = function(){
+                    console.log(2+3);
+                }
+                add();
+                add();
+            
+            // ------------- 2nd Task -------------
+                console.log("------- 2nd Task---------");
+                
+                function runtwice(fun){
+                    fun();
+                    fun();
+                }
+                runtwice(function(){
+                    console.log('12b');
+                })
+                runtwice(add);
+
+            // ------------- 3rd  and 4th Task -------------
+                console.log("------- 3rd Task---------");
+
+                function start_button(){
+                    setTimeout(function(){
+                        document.querySelector('.js-start-button').innerHTML='Finished';
+                    },1000);
+                    document.querySelector('.js-start-button').innerHTML='Loading....';
+                }
+
+            // ------------- 5th Task -------------
+                console.log("------- 5th Task---------");
+
+                function addToCart(){
+                    document.querySelector('.js-add-button').innerHTML='Added';
+                    setTimeout(function(){
+                        document.querySelector('.js-add-button').innerHTML='';
+                    },1000*2);
+                }
+        </script>
+    </body>
+</html>
