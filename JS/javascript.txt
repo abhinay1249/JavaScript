@@ -180,5 +180,11 @@ Advance Functions ------->> Functions are like values.
    ** If we need to use the continue statement in the foreach loop then instead of continue keyword, use need to use 
       return keyword in foreach loop as it performs the continue operation in foreach loop.
    ** If we need to use break then we can go for the normal for loop itself rather than foreach loop.
+   ** Arrow Functions are the shorthand and easiest way to perform the function handling.
+      eg:- const func = (param1) => {
+         console.log("arrow functions");
+         console.log(param1);
+      }
+      func();
 
 

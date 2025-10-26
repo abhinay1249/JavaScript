@@ -79,9 +79,25 @@
                     'Hello',
                     'I had my lunch',
                     'right now'
-                ].forEach(function for_each(value,index){
+                ].forEach((value,index) => {
                     console.log(index+'---> '+value);
                 });
+
+            // ---------- Arrow Functions --------------
+
+            const func_1 = (param1) =>{
+                console.log("arrow functions");
+                console.log(param1);
+            }
+
+            func_1('hi');
+            func_1(23);
+
+            const oneLine=() =>'Oneline Function';
+
+            console.log(oneLine());
+
+            
             
         </script>
     </body>
