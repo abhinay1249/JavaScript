@@ -176,5 +176,6 @@ Advance Functions ------->> Functions are like values.
          },5000);
    ** In order to stop the interval,we have function called clearInterval(intervalId); For every setInterval id it genereates a unique id 
       by using it we can stop the interval.
+   ** Another way to loop through the array is using .forEach() method.
 
 
