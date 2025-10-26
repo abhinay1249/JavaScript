@@ -195,5 +195,6 @@ Advance Functions ------->> Functions are like values.
          eg:- document.body.addEventListener('keydown',(event)=>{
                   console.log(event.key);
             })
+   ** document.querySelectorAll() is used to give all the elements on the page.
 
 
