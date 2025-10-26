@@ -174,5 +174,7 @@ Advance Functions ------->> Functions are like values.
          eg:- setInterval(function(){
             console.log('set interval run');
          },5000);
+   ** In order to stop the interval,we have function called clearInterval(intervalId); For every setInterval id it genereates a unique id 
+      by using it we can stop the interval.
 
 
