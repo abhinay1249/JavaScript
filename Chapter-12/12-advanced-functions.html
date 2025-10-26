@@ -4,6 +4,7 @@
         <title>Advance Functions</title>
     </head>
     <body>  
+        <button class="js-button">Click</button>
         <script>
             hello();
             function hello(){
@@ -96,6 +97,21 @@
             const oneLine=() =>'Oneline Function';
 
             console.log(oneLine());
+
+            // ---- Replace of onclick with .addEventListener ----
+
+            const button = document.querySelector('.js-button');
+
+            const remove = ()=>{
+                console.log('clicked');
+            };
+            button.addEventListener('click',remove);
+            button.removeEventListener('click',remove);
+            button.addEventListener('click',()=>{
+                console.log("clicks");
+            })
+
+
 
             
             

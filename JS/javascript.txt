@@ -186,5 +186,14 @@ Advance Functions ------->> Functions are like values.
          console.log(param1);
       }
       func();
+   ** addEventListener(param1,param2) where in it is used to replace the onclick attribute and perform those operations by this
+      in javascript itself. param1 should be a string with the event to be performed such as onClick is a eventListener but click is a event.
+      so click should be param1 and then the function to perform over there.
+   ** .removeEventListener(param1,param2) used to remove the event on the click of that button the parameters are same as the 
+      addEventListener itself.
+   ** By using the .addEventListener() and then using the keydown process in js used to make it clear enough.
+         eg:- document.body.addEventListener('keydown',(event)=>{
+                  console.log(event.key);
+            })
 
 
