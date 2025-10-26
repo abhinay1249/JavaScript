@@ -19,7 +19,7 @@
             console.log(variable);
             console.log(typeof variable);
             variable();
-            
+
             // ------- Function inside an object ---------
 
             const object = {
@@ -29,6 +29,47 @@
                 }
             }
             object.fun();
+
+            // ------------- Function inside a function -----------
+
+            function func1(param){
+                param();
+            }
+            func1(function(){
+                console.log('function inside function');
+            });
+
+            
+            // ------------- Automate a function in future ------
+
+                console.log('-----setTimeout() method-----');
+
+                setTimeout(function(){
+                    console.log("automate a function in future");
+                },5000);
+            
+                
+            // ------------- Asynchronous Code ----------
+                
+                console.log("----- Asynchronous Code -------");
+
+                setTimeout(function(){
+                    console.log("Timer code");
+                },6000);
+
+                console.log("After timer code");
+            
+            
+            // ------------- Automate a Function Again and again ------
+
+                console.log('Automate a function repetitively');
+
+                setInterval(function(){
+                    console.log('Set interval run');
+                },1000*10000000);
+
+                console.log('post set interval run');
+            
         </script>
     </body>
 </html>

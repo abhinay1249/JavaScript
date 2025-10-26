@@ -148,5 +148,31 @@ Advance Functions ------->> Functions are like values.
                }
             }
             object1.fun();
+   ** setTimeout() --->> It is used to run a function in future.
+      It does consists of two parameters setTimeout(function,milliseconds);
+      setTimeout(function(){
+         console.log('automate function in future')
+      },5000);
+   ** Asynchronous code is a type of code that does executes the statement ahead even though it has a function
+      that takes some time to complete and then perform.
+         -->> There is a function which is set to run in 5 seconds, meanwhile there is a 
+               console statement below it.
+                  -->> First the console statement is printed and then the timer function is runned, due to the 
+                        Asynchronous code ability
+         eg:- setTimeout(function(){
+                  console.log('Asynchronous test');
+               },5000);
+
+               console.log('after Asynchronous');
+   ** Synchronous code is a type of flow through which each statement is executed and then proceeds to the next one.
+      eg:- console.log('one');
+           console.log('two');
+      first one is executed and then two is done in Synchronous manner.
+   ** Synchronous code does the process one after the other.
+   ** Asynchronous code does the process where one runs in background still the next one is executed and then the backgorund one is displayed.
+   ** setInterval() is also a built in function where in it runs the function again and again for its scheduled time.
+         eg:- setInterval(function(){
+            console.log('set interval run');
+         },5000);
 
 
