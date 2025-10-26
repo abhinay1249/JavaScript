@@ -1,4 +1,4 @@
-const todolist = [];
+const todolist = JSON.parse(localStorage.getItem('todolist'))||[];
 
 rendertodoList();
 
@@ -20,14 +20,15 @@ function rendertodoList(){
             <div> ${date} </div>
                 <button     
                     onclick="todolist.splice(${i},1)
-                    rendertodoList();"
-                    class="css-delete">Delete
+                    rendertodoList();
+                    saveStorage();"
+                    class="css-delete" >Delete
                 </button>
         `;
         todoHtml+=htmlValues;
     }
     document.querySelector(".js-div-tag").innerHTML=todoHtml;
-   // console.log(todoHtml);
+   console.log(todoHtml);
 }
 
 function addTodoList(){
@@ -45,9 +46,13 @@ function addTodoList(){
     //console.log(todolist);
     input_value.value='';
     rendertodoList();
+
+    saveStorage();
 }
 
-
+function saveStorage(){
+    localStorage.setItem('todolist',JSON.stringify(todolist));
+}
 function keys(){
     if(event.key === 'Enter') addTodoList();
 }
