@@ -6,9 +6,9 @@
         </title>
     </head>
     <body>
-        <button onclick="start_button();" class="js-start-button">Start</button>
+        <button class="js-start-button">Start</button>
         <p></p>
-        <button onclick="addToCart();">Add to Cart</button>
+        <button class="js-add-to-cart">Add to Cart</button>
         <p class="js-add-button"></p>
         <script>
             // ------------- 1st Task -------------
@@ -32,22 +32,28 @@
                 })
                 runtwice(add);
 
+            document.querySelector('.js-start-button').addEventListener('click',()=>{
+                start_button();
+            });
+
             // ------------- 3rd and 4th Task -------------
                 console.log("------- 3rd Task---------");
 
                 function start_button(){
-                    setTimeout(function(){
+                    setTimeout(()=>{
                         document.querySelector('.js-start-button').innerHTML='Finished';
                     },1000);
                     document.querySelector('.js-start-button').innerHTML='Loading....';
                 }
-
+            document.querySelector('.js-add-to-cart').addEventListener('click',()=>{
+                addToCart();
+            }); 
             // ------------- 5th Task -------------
                 console.log("------- 5th Task---------");
 
                 function addToCart(){
                     document.querySelector('.js-add-button').innerHTML='Added';
-                    setTimeout(function(){
+                    setTimeout(()=>{
                         document.querySelector('.js-add-button').innerHTML='';
                     },1000*2);
                 }

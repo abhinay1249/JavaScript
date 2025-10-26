@@ -14,11 +14,11 @@ let score = JSON.parse(localStorage.getItem('score')) || {
         */
 
         function resetScore(){
-            score.wins = 0;
-            score.loses = 0;
-            score.tie = 0;
+          score.wins = 0;
+          score.loses = 0;
+          score.tie = 0;
 
-            localStorage.removeItem('score');
+          localStorage.removeItem('score');
 
            // alert(`Score:- Won: ${score.wins} Lost: ${score.loses} Tie: ${score.tie}`);
 
@@ -33,9 +33,11 @@ let score = JSON.parse(localStorage.getItem('score')) || {
                     playGame(playerMove);
                 },1000);
                 isAuto=true;
+                document.querySelector('.js-auto-button').innerHTML='Stop  Auto Playing';
             }else{
                 clearInterval(intervalId);
                 isAuto=false;
+                document.querySelector('.js-auto-button').innerHTML='Auto Play';
             }
         }
 
@@ -49,11 +51,10 @@ let score = JSON.parse(localStorage.getItem('score')) || {
           playGame('scissors');
         });
         document.querySelector('.js-reset-button').addEventListener('click',()=>{
-          resetScore(); 
-          updateElementScore();
+          resetNotification();
         });
         document.querySelector('.js-auto-button').addEventListener('click',()=>{
-          autoPlay();
+            autoPlay();
         });
 
         document.body.addEventListener('keydown',(event)=>{
@@ -63,8 +64,33 @@ let score = JSON.parse(localStorage.getItem('score')) || {
             playGame('paper');
           }else if(event.key==='s'||event.key==='S'){
             playGame('scissors');
+          }else if(event.key==='a'||event.key==='A'){
+            autoPlay();
+          }else if(event.key==='Backspace'){
+            resetNotification();
           }
         });
+
+        function resetNotification(){
+          document.querySelector('.js-reset-confirmation').innerHTML=`Are you sure you want to reset the score?
+          <button class="js-reset-confirm-yes css-reset-confirm-button">Yes</button>
+          <button class="js-reset-confirm-no css-reset-confirm-button">No</button>`;
+
+          document.querySelector('.js-reset-confirm-yes').addEventListener('click',()=>{
+            resetScore();
+            updateElementScore();
+            hideResetConfirmation();
+          })
+          document.querySelector('.js-reset-confirm-no').addEventListener('click',()=>{
+            hideResetConfirmation();
+          })
+        }
+
+        function hideResetConfirmation(){
+          document.querySelector('.js-reset-confirmation').innerHTML='';
+        }
+
+
 
         function playGame(playerMove){
           const computerMove = pickComputerMove();
