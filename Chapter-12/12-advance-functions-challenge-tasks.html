@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Advanced Function Challenege tasks
+        </title>
+    </head>
+    <body>
+        <button onclick="addToCart();">Add to Cart</button>
+        <p class="js-add-button"></p>
+        <p></p>
+        <button onclick="messages++; displayNotfication();">Add</button>
+        <p></p>
+        <button onclick="messages--; stopNotification();">Remove</button>
+        <script>
+            let timeoutId;
+
+            function addToCart(){
+                document.querySelector('.js-add-button').innerHTML='Added';
+
+                clearTimeout(timeoutId);
+
+                timeoutId=setTimeout(function(){
+                    document.querySelector('.js-add-button').innerHTML='';
+                },1000*2);
+                
+            }
+
+            let messages = 2;
+            let intervalId;
+            let isDisplay;
+
+            displayNotfication();
+
+            function displayNotfication(){
+                if(isDisplay){
+                    return;
+                }
+                isDisplay=true;
+                if(messages>0){
+                        intervalId=setInterval(function(){
+                            if(document.title === 'Advanced Function Challenege tasks'){
+                                document.title=`(${messages}) New Messages`;
+                            }else{
+                                document.title='Advanced Function Challenege tasks';
+                            }
+                        },1000);
+                }
+            }
+
+            function stopNotification(){
+                isDisplay=false;
+                if(messages === 0){
+                    clearInterval(intervalId);
+                    document.title='Advanced Function Challenege tasks';
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
