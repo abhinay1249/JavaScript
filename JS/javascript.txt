@@ -32,6 +32,10 @@ Objects ---->> An object groups multiple values together.
    ** "Convert json into js object" --->> JSON.parse(json) is used to convert the json object into js object.
    ** localStorage is used to store the actions performed even after the page is refreshed.
    ** localStorage supports only strings.
+   ** localStorage has methods such as .setItem() .getItem() .removeItem()
+      .setItem(value1,value2) ---> is used to set the the value2 to value1.
+      .getItem(value1) --->> to retreive the value[value2] stored in local storage we need to use value1 for it as retreival.
+      .removeItem(value1) ---->> is used to remove the particular storage information from local storage. 
    ** When nothing exists in local storage, it gives us ''null''.
    ** Null means intentionally want something to be empty.
    ** Auto Boxing --->> It refers to the process of string to wrap in an object, it does not work with 
