@@ -210,3 +210,4 @@ Advance Functions ------->> Functions are like values.
    ** Closure ----> if a function has access to the value, then it will always have access to that value.
 
 
+
