@@ -174,7 +174,7 @@ Advance Functions ------->> Functions are like values.
          eg:- setInterval(function(){
             console.log('set interval run');
          },5000);
-   ** In order to stop the interval,we have function called clearInterval(intervalId); For every setInterval id it genereates a unique id 
+   ** In order to stop the interval, we have function called clearInterval(intervalId); For every setInterval id it genereates a unique id 
       by using it we can stop the interval.
    ** Another way to loop through the array is using .forEach() method.
    ** If we need to use the continue statement in the foreach loop then instead of continue keyword, use need to use 
