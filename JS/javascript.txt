@@ -209,5 +209,6 @@ Advance Functions ------->> Functions are like values.
          });
    ** Closure ----> if a function has access to the value, then it will always have access to that value.
 
-
+** In order to get the decimal values upto the respective places then use .toFixed(<number>), here the number provides the 
+   number provides the number of decimal places.
 
