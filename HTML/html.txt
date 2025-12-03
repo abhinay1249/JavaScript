@@ -3,3 +3,4 @@
 ** A <div> tag is like a container which is used to contain other elements like buttons, paragraphs tags etc.
 ** In html, we cannot have a paragraph inside a paragraph. So we use div tag for it to perform.
 ** A paragraph tag does have extra space above and below, whereas a div tag does not provide it.
+** A data attribute is a kind of another HTML attribute which allows us to attach any information to an element.

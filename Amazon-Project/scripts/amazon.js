@@ -53,6 +53,6 @@ document.querySelector('.js-products-grid').innerHTML=productsHTML;
 document.querySelectorAll('.js-cart-products')
   .forEach((button)=>{
       button.addEventListener('click',()=>{
-        console.log('Added Product');
+        
       })
   });
