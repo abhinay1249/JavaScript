@@ -4,3 +4,5 @@
 ** In html, we cannot have a paragraph inside a paragraph. So we use div tag for it to perform.
 ** A paragraph tag does have extra space above and below, whereas a div tag does not provide it.
 ** A data attribute is a kind of another HTML attribute which allows us to attach any information to an element.
+    syntax:- need to start with data-<any name>
+** .dataset is used to give all the data from the "data-" attribute property.
