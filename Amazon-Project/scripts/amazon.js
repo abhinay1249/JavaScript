@@ -39,15 +39,20 @@ products.forEach((product)=>{
         <img src="images/icons/checkmark.png">
         Added
       </div>
-      <button class="add-to-cart-button button-primary">
+      <button class="add-to-cart-button button-primary
+        js-cart-products">
         Add to Cart
       </button>
     </div>
 `;
 })
 
-console.log(productsHTML);
 
 document.querySelector('.js-products-grid').innerHTML=productsHTML;
 
-
+document.querySelectorAll('.js-cart-products')
+  .forEach((button)=>{
+      button.addEventListener('click',()=>{
+        console.log('Added Product');
+      })
+  });
