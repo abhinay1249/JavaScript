@@ -51,7 +51,7 @@ Objects ---->> An object groups multiple values together.
       such as:
                const message = object3.message; -->> the variable is assigned to the object property value.
                [Shortcut] const {message} = object4; -->> it means that object4 property message value is being
-               assinged to the variable message through the shortcut message.
+                  assinged to the variable message through the shortcut message.
                If it contains multiple properties then it is 
                   const {message, price} = object4;
    ** Shorthand method --->> Kind of method where in the js object we can direclty create the method rather than 
