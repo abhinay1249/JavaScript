@@ -71,7 +71,9 @@ document.querySelectorAll('.js-cart-products')
             quantity:1
           })
         }
-
+        
+        // Updating the Cart Quantity
+        
         let cartQuantity = 0;
 
         cart.forEach((item)=>{
@@ -80,7 +82,5 @@ document.querySelectorAll('.js-cart-products')
 
         document.querySelector(".js-cart-quantity").innerHTML=cartQuantity;
 
-        console.log(cartQuantity);
-        console.log(cart);
       })
   });
