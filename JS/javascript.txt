@@ -214,5 +214,5 @@ Advance Functions ------->> Functions are like values.
 ** If there are multiple js scripts then try to arrange the src file in a required manner
       to be applicable on the webpage.
 ** We can even add a class to the elements in javascript by using ----> .classList.add(<class-name>)
-      
+      and can be styled in css by using it.
 
