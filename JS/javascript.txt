@@ -216,3 +216,5 @@ Advance Functions ------->> Functions are like values.
 ** We can even add a class to the elements in javascript by using ----> .classList.add(<class-name>)
       and can be styled in css by using it.
 
+Modules -------------->> A better way to organize the entire code.
+
