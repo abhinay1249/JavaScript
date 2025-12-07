@@ -120,6 +120,6 @@ function updateCartQuantity(){
     cartQuantity+=item.quantity;
   });
 
-  document.querySelector(".js-checkout-quantity").innerHTML=`Checkout(${cartQuantity} items)`;
+  document.querySelector(".js-checkout-quantity").innerHTML=`${cartQuantity}`;
 }
 updateCartQuantity();
