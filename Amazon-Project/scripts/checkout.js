@@ -1,22 +1,22 @@
-import {cart, removeFromCart} from '../data/cart.js';
-import {products} from '../data/products.js';
-import {formatCurrency} from './utils/money.js';
+import { cart, removeFromCart } from '../data/cart.js';
+import { products } from '../data/products.js';
+import { formatCurrency } from './utils/money.js';
 
-let cartSummaryHTML ='';
+let cartSummaryHTML = '';
 
-cart.forEach((cartItem)=>{
-    const productId = cartItem.productId;
+cart.forEach((cartItem) => {
+  const productId = cartItem.productId;
 
-    let matchingProduct;
+  let matchingProduct;
 
-    products.forEach((product)=>{
-        if(product.id===productId){
-            matchingProduct=product;
-        }
-    })
+  products.forEach((product) => {
+    if (product.id === productId) {
+      matchingProduct = product;
+    }
+  })
 
-    
-    cartSummaryHTML += `
+
+  cartSummaryHTML += `
         <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
             <div class="delivery-date">
               Delivery date: Tuesday, June 21
@@ -96,15 +96,30 @@ cart.forEach((cartItem)=>{
     `;
 })
 
-document.querySelector('.js-order-summary').innerHTML=cartSummaryHTML;
+document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
 
 document.querySelectorAll('.js-delete-link')
-  .forEach((item)=>{
-    item.addEventListener('click',()=>{
+  .forEach((item) => {
+    item.addEventListener('click', () => {
       const productId = item.dataset.productId;
       removeFromCart(productId);
-      
+
       const container = document.querySelector(`.js-cart-item-container-${productId}`);
       container.remove();
+      updateCartQuantity();
     });
   });
+
+function updateCartQuantity(){
+        
+  // Updating the Cart Quantity
+        
+  let cartQuantity = 0;
+
+  cart.forEach((item)=>{
+    cartQuantity+=item.quantity;
+  });
+
+  document.querySelector(".js-checkout-quantity").innerHTML=`Checkout(${cartQuantity} items)`;
+}
+updateCartQuantity();
