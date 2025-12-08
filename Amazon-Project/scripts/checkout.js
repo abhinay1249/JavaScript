@@ -120,7 +120,7 @@ function updateCartQuantity(){
         
   const cartQuantity=calculateCartQuantity();
 
-  document.querySelector(".js-checkout-quantity").innerHTML=`${cartQuantity} items`;
+  document.querySelector('.js-checkout-quantity').innerHTML=`${cartQuantity} items`;
 }
 updateCartQuantity();
 
