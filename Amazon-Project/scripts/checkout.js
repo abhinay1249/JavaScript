@@ -148,9 +148,10 @@ document.querySelectorAll('.js-save-link')
 
       const newQuantity = Number(updatedQuantityInput.value);
 
-      document.querySelectorAll(`.js-quantity-label-${productId}`).innerHTML=newQuantity;
-
-      updateQuantity(productId,newQuantity);
-      updateCartQuantity();
+      if(newQuantity>=0 && newQuantity<=1000){
+        updateQuantity(productId,newQuantity);
+        document.querySelectorAll(`.js-quantity-label-${productId}`).innerHTML=newQuantity;
+        updateCartQuantity();
+      }
     });
   });
