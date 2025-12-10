@@ -218,10 +218,16 @@ Advance Functions ------->> Functions are like values.
 
 Modules -------------->> A better way to organize the entire code.
 
-      ** In order to use this module you need to remove the file name from the script element and then   
-            use type="module' which enables the module funcitonality.
-      ** Now whatever we need from one js file can be done using export and the info.
-            eg:- export const cart=[];
-      ** Now inorder to use that exported information we need to use the import one in that file.
-            eg:- import {<element>} from '<file - path from whih export is present>'
+   ** In order to use this module you need to remove the file name from the script element and then   
+         use type="module' which enables the module funcitonality.
+   ** Now whatever we need from one js file can be done using export and the info.
+         eg:- export const cart=[];
+   ** Now inorder to use that exported information we need to use the import one in that file.
+         eg:- import {<element>} from '<file - path from whih export is present>'
 
+External Libraries --------------->> Here you can get the code from external sources in the form of functions and then call them in your code.
+
+   ** Here by using dayjs(); we can get the current date and time.
+   ** In order to add additional timeline then use .add() function with two parameters in it,
+         .add(<number of days>,<type of timeline>);
+   
