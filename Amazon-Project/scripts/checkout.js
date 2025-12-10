@@ -15,6 +15,12 @@ cart.forEach((cartItem) => {
     }
   })
 
+// Checking out the External Libraries.
+// const temp = dayjs();
+// const temp1= temp.add(2,'days');
+// const temp2 = temp1.format('dddd, D MMMM')
+// console.log(temp2);
+
 
   cartSummaryHTML += `
         <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
