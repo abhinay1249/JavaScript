@@ -234,5 +234,7 @@ External Libraries --------------->> Here you can get the code from external sou
       .format('dddd, MMMM D');
    ** ESM Version is a kind of version which is a ecmascript module,
       ecmascript is another one for javascript.
-   
+   ** There are two kinds of export:-
+      --> Named Export = {<export functions>}
+      --> Default export = <export function>
    
