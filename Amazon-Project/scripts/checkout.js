@@ -1,9 +1,15 @@
-import { cart, removeFromCart,calculateCartQuantity, updateQuantity } from '../data/cart.js';
-import { products } from '../data/products.js';
-import { formatCurrency } from './utils/money.js';
+import { cart, removeFromCart, calculateCartQuantity, updateQuantity } from '../data/cart.js';
+import {products} from '../data/products.js';
+import {formatCurrency} from './utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
 
 let cartSummaryHTML = '';
+
+// Checking out the External Libraries.
+const temp = dayjs();
+const temp1= temp.add(2,'days');
+const temp2 = temp1.format('dddd, D MMMM')
+console.log(temp2);
 
 cart.forEach((cartItem) => {
   const productId = cartItem.productId;
@@ -14,14 +20,7 @@ cart.forEach((cartItem) => {
     if (product.id === productId) {
       matchingProduct = product;
     }
-  })
-
-// Checking out the External Libraries.
-// const temp = dayjs();
-// const temp1= temp.add(2,'days');
-// const temp2 = temp1.format('dddd, D MMMM')
-// console.log(temp2);
-
+  });
 
   cartSummaryHTML += `
         <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
@@ -105,7 +104,8 @@ cart.forEach((cartItem) => {
             </div>
         </div>
     `;
-})
+});
+
 
 document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
 
