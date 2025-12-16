@@ -237,4 +237,5 @@ External Libraries --------------->> Here you can get the code from external sou
    ** There are two kinds of export:-
       --> Named Export = {<export functions>}
       --> Default export = <export function>
+   ** Minification : - It is the process of combining the code for a future purpose in scripting.
    
