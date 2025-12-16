@@ -51,11 +51,11 @@ export function removeFromCart(productId) {
 
 export function calculateCartQuantity() {
   
-  let cartQuantity=0;
+  let cartQuantity='';
 
   cart.forEach((item) => {
     cartQuantity += item.quantity;
-  })
+  });
 
   return cartQuantity;
 }
