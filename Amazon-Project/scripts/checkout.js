@@ -114,7 +114,9 @@ function deliveryOptionsHTML() {
     const deliveryDate=today.add(deliveryOption.deliveryDays,'days');
     const dateString = deliveryDate.format('DDDD, MMMM d')
     
-    const priceString = 
+    const priceString = deliveryOption.priceCents===0
+    ? 'FREE'
+    :`$${deliveryOption.priceCents} - `;
     `
       <div class="delivery-option">
         <input type="radio" checked
@@ -125,11 +127,11 @@ function deliveryOptionsHTML() {
             ${dateString}
           </div>
           <div class="delivery-option-price">
-            FREE Shipping
+            ${priceString} Shipping
           </div>
         </div>
       </div>
-                `
+    `
   })
 }
 document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
