@@ -6,10 +6,10 @@ import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
 let cartSummaryHTML = '';
 
 // Checking out the External Libraries.
-const temp = dayjs();
-const temp1= temp.add(2,'days');
-const temp2 = temp1.format('dddd, D MMMM')
-console.log(temp2);
+// const temp = dayjs();
+// const temp1= temp.add(2,'days');
+// const temp2 = temp1.format('dddd, D MMMM')
+// console.log(temp2);
 
 cart.forEach((cartItem) => {
   const productId = cartItem.productId;
