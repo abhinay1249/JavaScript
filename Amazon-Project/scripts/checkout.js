@@ -1,4 +1,4 @@
-import { cart, removeFromCart, calculateCartQuantity, updateQuantity } from '../data/cart.js';
+import { cart, removeFromCart, calculateCartQuantity, updateQuantity,updateDeliveryOption} from '../data/cart.js';
 import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
@@ -9,7 +9,7 @@ let cartSummaryHTML = '';
 // Checking out the External Libraries.
 // const temp = dayjs();
 // const temp1= temp.add(2,'days');
-// const temp2 = temp1.fqormat('dddd, D MMMM')
+// const temp2 = temp1.format('dddd, D MMMM')
 // console.log(temp2);
 
 cart.forEach((cartItem) => {
@@ -23,7 +23,7 @@ cart.forEach((cartItem) => {
     }
   });
 
-  const deliveryOptionId = cartItem.deliverOptionId;
+  const deliveryOptionId = cartItem.deliveryOptionId;
 
   let deliveryOption;
 
@@ -83,7 +83,9 @@ cart.forEach((cartItem) => {
 });
 
 function deliveryOptionsHTML(matchingProduct,cartItem) {
+
   let html = '';
+
   deliveryOptions.forEach((deliveryOption) => {
     const today = dayjs();
     const deliveryDate=today.add(deliveryOption.deliveryDays,'days');
@@ -96,7 +98,7 @@ function deliveryOptionsHTML(matchingProduct,cartItem) {
     const isChecked = deliveryOption.id===cartItem.deliveryOptionId;
 
     html+=`
-      <div class="delivery-option">
+      <div class="delivery-option js-delivery-option" data-product-id="${matchingProduct.id}" data-delivery-option-id="${deliveryOption.id}">
         <input type="radio" ${isChecked ? 'checked':''}
           class="delivery-option-input"
           name="delivery-option-${matchingProduct.id}">
@@ -127,6 +129,15 @@ document.querySelectorAll('.js-delete-link')
     });
   });
 
+document.querySelectorAll('.js-delivery-option')
+  .forEach((element) =>{
+    element.addEventListener('click',()=>{
+      const {productId,deliveryOptionId} = element.dataset;
+      updateDeliveryOption(productId,deliveryOptionId);
+    })
+  });
+
+
 function updateCartQuantity() {
 
   // Updating the Cart Quantity
@@ -135,6 +146,7 @@ function updateCartQuantity() {
 
   document.querySelector('.js-checkout-quantity').innerHTML = `${cartQuantity} items`;
 }
+
 updateCartQuantity();
 
 document.querySelectorAll(`.js-update-link`)
@@ -168,3 +180,4 @@ document.querySelectorAll('.js-save-link')
       }
     });
   });
+
