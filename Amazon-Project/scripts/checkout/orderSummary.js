@@ -1,8 +1,8 @@
-import { cart, removeFromCart, calculateCartQuantity, updateQuantity,updateDeliveryOption} from '../data/cart.js';
-import { products } from '../data/products.js';
-import { formatCurrency } from './utils/money.js';
+import { cart, removeFromCart, calculateCartQuantity, updateQuantity,updateDeliveryOption} from '../../data/cart.js';
+import { products } from '../../data/products.js';
+import { formatCurrency } from '../utils/money.js';
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
-import {deliveryOptions} from '../data/deliveryOptions.js';
+import {deliveryOptions} from '../../data/deliveryOptions.js';
 
 // Checking out the External Libraries.
 // const temp = dayjs();
@@ -10,7 +10,7 @@ import {deliveryOptions} from '../data/deliveryOptions.js';
 // const temp2 = temp1.format('dddd, D MMMM')
 // console.log(temp2);
 
- export function renderOrderSummary(){
+export function renderOrderSummary(){
 
   let cartSummaryHTML = '';
 
