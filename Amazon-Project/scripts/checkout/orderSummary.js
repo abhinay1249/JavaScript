@@ -132,13 +132,12 @@ export function renderOrderSummary(){
       })
     });
 
+  // Updating the Cart Quantity
 
   function updateCartQuantity() {
 
-    // Updating the Cart Quantity
-
     const cartQuantity = calculateCartQuantity();
-
+    
     document.querySelector('.js-checkout-quantity').innerHTML = `${cartQuantity} items`;
   }
 
