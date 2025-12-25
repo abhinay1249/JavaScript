@@ -242,4 +242,7 @@ External Libraries --------------->> Here you can get the code from external sou
          --> Model = Saves and manages the data
          --> View = takes the data and displays on the page.
          --> Controller = Runs some code to interact with the page.
+
+Testing --------------------------->> A group of tests combined together is known as Test-Suite.
+
    
