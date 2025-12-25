@@ -30,3 +30,11 @@ console.log(dayofweek);
 
 // 5th task
 
+function isWeekend(date){
+    const day = date.format('dddd');
+    console.log(day);
+}
+
+isWeekend(next5days);
+isWeekend(today);
+isWeekend(next1month);
