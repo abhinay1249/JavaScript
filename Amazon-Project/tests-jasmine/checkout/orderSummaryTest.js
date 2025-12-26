@@ -1,5 +1,5 @@
 import { renderOrderSummary } from '../../scripts/checkout/orderSummary.js';
-import { loadFromStorage } from '../../data/cart.js';
+import { loadFromStorage,cart} from '../../data/cart.js';
 
 
 describe('Test Suite: renderOrderSummary', () => {
@@ -78,6 +78,7 @@ describe('Test Suite: renderOrderSummary', () => {
             document.querySelector(`.js-cart-item-container-${productId2}`)
         ).not.toEqual(null);
         
-
+        expect(cart.length).toEqual(1);
+        expect(cart[0].productId).toEqual(productId2);
     });
 });
