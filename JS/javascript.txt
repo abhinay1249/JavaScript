@@ -244,5 +244,8 @@ External Libraries --------------->> Here you can get the code from external sou
          --> Controller = Runs some code to interact with the page.
 
 Testing --------------------------->> A group of tests combined together is known as Test-Suite.
-
+   
+   ** Jasmine is one of the testing framework used for JS.
+   ** Jest is one of the testing framework used for ReactJS.
+   
    
