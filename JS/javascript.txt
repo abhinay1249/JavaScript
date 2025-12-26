@@ -256,7 +256,11 @@ Testing --------------------------->> A group of tests combined together is know
          eg:- spyOn().and.callFake();
    ** Unit Testing, test a piece of code.
    ** Integration Testing, testing many units of code working together.
-   
+   ** Hooks - Let us run some code to test the code.
+         beforeEach() = runs code before each test
+         afterEach() = runs code after each test
+         beforeAll() = runs code before all tests
+         afterAll() = runs code after all tests
 
 
    
