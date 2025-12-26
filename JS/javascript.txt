@@ -252,6 +252,8 @@ Testing --------------------------->> A group of tests combined together is know
    ** In order to create the a test we use it(<name_of_test>,()=>{});
    ** In order to create an if statement and print it, in Jasmine we use 
       expect(<condition>).toEqual('20.95');
+   ** Mocks are used to create fake version in order to overcome the localStorage issue.
+         eg:- spyOn().and.callFake();
 
 
    
