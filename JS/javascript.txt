@@ -250,7 +250,8 @@ Testing --------------------------->> A group of tests combined together is know
    ** Spec is referred to test in Jasmine Testing Environment.
    ** In Jasmine, to create a test suite we use describe('<test suite: name>')
    ** In order to create the a test we use it(<name_of_test>,()=>{});
-   ** In order to create an if statement and print it, in Jasmine we use expect
+   ** In order to create an if statement and print it, in Jasmine we use 
+      expect(<condition>).toEqual('20.95');
 
 
    
