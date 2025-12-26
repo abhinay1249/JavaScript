@@ -247,6 +247,7 @@ Testing --------------------------->> A group of tests combined together is know
    
    ** Jasmine is one of the testing framework used for JS.
    ** Jest is one of the testing framework used for ReactJS.
+   ** Spec is referred to test in Jasmine Testing Environment.
    
 
    
