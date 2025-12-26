@@ -254,6 +254,9 @@ Testing --------------------------->> A group of tests combined together is know
       expect(<condition>).toEqual('20.95');
    ** Mocks are used to create fake version in order to overcome the localStorage issue.
          eg:- spyOn().and.callFake();
+   ** Unit Testing, test a piece of code.
+   ** Integration Testing, testing many units of code working together.
+   
 
 
    
