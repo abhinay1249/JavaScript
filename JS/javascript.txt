@@ -275,3 +275,8 @@ Object Oriented Programming ---------------------->> Treating everything in the 
          eg:- const date = new Date();
               date.toLocaleTimeString();
    ** this becomes undefined inside a regular function.
+   ** Inside a method of the object, this points to the outer object.
+   ** Inside a method, this is undefined but can be change during the method call by using   
+         <function_name>.call('<text>');
+   ** Arrow functions do not change the value of this rather present the value present outer of it.
+   
