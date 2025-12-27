@@ -274,3 +274,4 @@ Object Oriented Programming ---------------------->> Treating everything in the 
    ** Built In Class - Classes provided by the language.
          eg:- const date = new Date();
               date.toLocaleTimeString();
+   ** this becomes undefined inside a regular function.
