@@ -265,4 +265,4 @@ Testing --------------------------->> A group of tests combined together is know
 Object Oriented Programming ---------------------->> Treating everything in the format of objects and classes.
 
    ** In order to provide the private access modifier to the variables or methods use # infront of it.
-   
+   ** Inheritance - let us reuse the code between classes.
