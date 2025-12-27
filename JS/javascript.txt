@@ -262,5 +262,7 @@ Testing --------------------------->> A group of tests combined together is know
          beforeAll() = runs code before all tests
          afterAll() = runs code after all tests
 
+Object Oriented Programming ---------------------->> Treating everything in the format of objects and classes.
 
+   ** In order to provide the private access modifier to the variables or methods use # infront of it.
    
