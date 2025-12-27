@@ -266,3 +266,6 @@ Object Oriented Programming ---------------------->> Treating everything in the 
 
    ** In order to provide the private access modifier to the variables or methods use # infront of it.
    ** Inheritance - let us reuse the code between classes.
+   ** super() is used to call the constructor of the parent class.
+   ** Discriminator Property - It tells us which type of class it is.
+         eg:- type:'clothing'
