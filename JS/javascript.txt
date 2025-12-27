@@ -269,3 +269,5 @@ Object Oriented Programming ---------------------->> Treating everything in the 
    ** super() is used to call the constructor of the parent class.
    ** Discriminator Property - It tells us which type of class it is.
          eg:- type:'clothing'
+   ** Polymorphism - use a method without knowing the class.
+   
