@@ -289,4 +289,7 @@ Backend -----------------------> Another Computer that manageas the data of a we
    ** Status code starting with 2 is success.
    ** Call Back ----> a function to run in the future.
    ** Promises ------> better way to handle asynchronous code.
-         
+         resolve() it is used to perform the next set of steps to be executed.
+   ** Drawback of call back --> It creates a lot of nested functions internally.
+   ** Advantage of Promise --> It is used to flatten the code.
+     
