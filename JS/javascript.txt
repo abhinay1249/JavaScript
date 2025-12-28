@@ -300,6 +300,12 @@ Backend -----------------------> Another Computer that manageas the data of a we
    ** Await ---> Let us wait for a promise to finish, before going to the next line.
          It let us write asynchronous code like normal code.
    ** Await can be used only inside the async function.
-   
+
+Error Handling -------------------------------> To Capture the errors
+
+   ** In Call Back, addEventListener and then first parameter is error and the other are
+         the function of it.
+   ** In promise there is catch() function with a console statement.
+
    
 
