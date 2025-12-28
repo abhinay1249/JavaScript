@@ -4,7 +4,7 @@ import {products,loadProducts} from '../data/products.js';
 
 loadProducts(renderProductsGrid);
 
-export function renderProductsGrid(){
+function renderProductsGrid(){
 
   let productsHTML='';
 

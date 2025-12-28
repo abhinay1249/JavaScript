@@ -287,3 +287,5 @@ Backend -----------------------> Another Computer that manageas the data of a we
    ** Status code starting with 4 is our problem.
    ** Status code starting with 5 is backend problem.
    ** Status code starting with 2 is success.
+   ** Call Back ----> a function to run in the future.
+   
