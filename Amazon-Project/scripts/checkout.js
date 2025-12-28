@@ -9,10 +9,15 @@ import { loadCart } from "../data/cart.js";
 async function loadPage() {
 
     try {
+
+        // throw 'error-1';
+
         await loadProductsFetch();
 
-        await new Promise((resolve) => {
+        await new Promise((resolve,reject) => {
+            // throw 'error-2';
             loadCart(() => {
+                // reject('error-3');
                 resolve('promise-2');
             });
         });

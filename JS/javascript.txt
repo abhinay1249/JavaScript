@@ -308,5 +308,8 @@ Error Handling -------------------------------> To Capture the errors
    ** In promise there is catch() function with a console statement.
    ** In async wait there can be used with the help of an try catch block.
    ** Try/catch can be used only for unexpected errors but not for all.
+   ** In promise if you want create an error in future then use, reject();
+         it can be used in the resolve parameter area itself.
+   
    
 
