@@ -295,4 +295,5 @@ Backend -----------------------> Another Computer that manageas the data of a we
    ** In order to run all the promises at a time then, we use  
          Promise.all([<list of promises]).then();
    ** Fetch ---> Is a better way to make HTTP Requests.
+   ** Async Wait ----> even better way to handle asynchronous code.
    
