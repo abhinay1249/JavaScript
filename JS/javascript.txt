@@ -315,5 +315,6 @@ Error Handling -------------------------------> To Capture the errors
 Retreiving the Summary Page after Orders ------------> The Final Page
 
    ** .unshift() is used to add the data to the first of the array.
-      
+   ** In Order to go to another file path of the page such as when clicking upon the button, the page switch can be done by using:
+         eg:- window.location.href='<file_path>';  
 
