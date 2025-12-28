@@ -279,4 +279,6 @@ Object Oriented Programming ---------------------->> Treating everything in the 
    ** Inside a method, this is undefined but can be change during the method call by using   
          <function_name>.call('<text>');
    ** Arrow functions do not change the value of this rather present the value present outer of it.
-   
+
+Backend -----------------------> Another Computer that manageas the data of a website.
+
