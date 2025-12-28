@@ -296,4 +296,10 @@ Backend -----------------------> Another Computer that manageas the data of a we
          Promise.all([<list of promises]).then();
    ** Fetch ---> Is a better way to make HTTP Requests.
    ** Async Wait ----> even better way to handle asynchronous code.
+   ** It makes a function return a promise.
+   ** Await ---> Let us wait for a promise to finish, before going to the next line.
+         It let us write asynchronous code like normal code.
+   ** Await can be used only inside the async function.
    
+   
+

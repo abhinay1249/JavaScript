@@ -6,20 +6,33 @@ import { loadCart } from "../data/cart.js";
 // import '../data/cart-class.js';
 // import '../data/backend-practice.js';
 
-Promise.all([
-    loadProductsFetch(),
+async function loadPage(){
+    console.log("load page");
 
-    new Promise((resolve) =>{
-        loadCart(()=>{
-            resolve('promise-2');
-        });
-    })
-]).then((values)=>{
-    console.log(values);
-    renderCheckoutHeader();
-    renderOrderSummary();
-    renderPaymentSummary();
+    await loadProductsFetch();
+    
+    return 'value2';
+}
+
+loadPage().then((value)=>{
+    console.log('next step');
+    console.log(value);
 });
+
+// Promise.all([
+//     loadProductsFetch(),
+
+//     new Promise((resolve) =>{
+//         loadCart(()=>{
+//             resolve('promise-2');
+//         });
+//     })
+// ]).then((values)=>{
+//     console.log(values);
+//     renderCheckoutHeader();
+//     renderOrderSummary();
+//     renderPaymentSummary();
+// });
 
 
 // ------------ Call Back ----------------
