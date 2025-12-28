@@ -283,4 +283,7 @@ Object Oriented Programming ---------------------->> Treating everything in the 
 Backend -----------------------> Another Computer that manageas the data of a website.
 
    ** In order to send a HTTP request to the Backend, we have a built in class as XMLHttpRequest
-      
+   ** Url Path - the url path is provided such that, https://supersimplebackend.dev/hello' here /hello is the url path.
+   ** Status code starting with 4 is our problem.
+   ** Status code starting with 5 is backend problem.
+   ** Status code starting with 2 is success.
