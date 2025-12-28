@@ -7,17 +7,25 @@ import { loadCart } from "../data/cart.js";
 // import '../data/backend-practice.js';
 
 async function loadPage(){
-    console.log("load page");
-
+    
     await loadProductsFetch();
     
-    return 'value2';
+    await new Promise((resolve) =>{
+        loadCart(()=>{
+            resolve('promise-2');
+        });
+    });
+
+    renderCheckoutHeader();
+    renderOrderSummary();
+    renderPaymentSummary();
+
+    
 }
 
-loadPage().then((value)=>{
-    console.log('next step');
-    console.log(value);
-});
+loadPage();
+
+// --------------- Promise ----------------------
 
 // Promise.all([
 //     loadProductsFetch(),
