@@ -6,28 +6,38 @@ import { loadCart } from "../data/cart.js";
 // import '../data/cart-class.js';
 // import '../data/backend-practice.js';
 
-// new Promise((resolve) =>{
-//     loadProducts(() =>{
-//         resolve();
-//     });
-// }).then(() =>{
-//     renderCheckoutHeader();
-//     renderOrderSummary();
-//     renderPaymentSummary();
-// });
+
+
+new Promise((resolve) =>{
+    loadProducts(() =>{
+        resolve();
+    });
+    
+}).then(() =>{
+    new Promise((resolve) =>{
+        loadCart(()=>{
+            resolve();
+        });
+    });
+
+}).then(()=>{
+    renderCheckoutHeader();
+    renderOrderSummary();
+    renderPaymentSummary();
+});
 
 
 // ------------ Call Back ----------------
 
-loadProducts(()=>{
+// loadProducts(()=>{
 
-    loadCart(()=>{
-        renderCheckoutHeader();
-        renderOrderSummary();
-        renderPaymentSummary();
-    });
+//     loadCart(()=>{
+//         renderCheckoutHeader();
+//         renderOrderSummary();
+//         renderPaymentSummary();
+//     });
 
-});
+// });
 
 
                        
