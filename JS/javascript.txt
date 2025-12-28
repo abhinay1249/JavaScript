@@ -282,3 +282,5 @@ Object Oriented Programming ---------------------->> Treating everything in the 
 
 Backend -----------------------> Another Computer that manageas the data of a website.
 
+   ** In order to send a HTTP request to the Backend, we have a built in class as XMLHttpRequest
+      
