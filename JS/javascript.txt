@@ -292,4 +292,5 @@ Backend -----------------------> Another Computer that manageas the data of a we
          resolve() it is used to perform the next set of steps to be executed.
    ** Drawback of call back --> It creates a lot of nested functions internally.
    ** Advantage of Promise --> It is used to flatten the code.
-     
+   ** In order to run all the promises at a time then, we use  
+         Promise.all([<list of promises]).then();
