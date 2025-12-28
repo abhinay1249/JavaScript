@@ -306,6 +306,7 @@ Error Handling -------------------------------> To Capture the errors
    ** In Call Back, addEventListener and then first parameter is error and the other are
          the function of it.
    ** In promise there is catch() function with a console statement.
-
+   ** In async wait there can be used with the help of an try catch block.
+   
    
 
